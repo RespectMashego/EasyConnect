@@ -1,5 +1,6 @@
 // ChatList.js
 
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
@@ -21,13 +22,14 @@ const dummyChats = [
   // Add more dummy data here
 ];
 
-const ChatList = ({ navigation }) => {
+const ChatList = () => {
+    const navigation=useNavigation()
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.chatItem}
       onPress={() => {
         // Navigate to the chat screen when a chat is selected
-        navigation.navigate('Chat', { chatId: item.id });
+        navigation.navigate('chatscreen', { chatId: item.id });
       }}
     >
       <Image style={styles.avatar} source={{ uri: item.avatar }} />
