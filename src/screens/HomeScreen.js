@@ -1,6 +1,7 @@
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import TopBar from '../components/home/TopBar';
+import ChatList from '../components/home/ChatList';
 
 const HomeScreen = () => {
   return (
@@ -10,6 +11,7 @@ const HomeScreen = () => {
         backgroundColor: 'white',
       }}>
       <TopBar />
+      <ChatList/>
     </SafeAreaView>
   );
 };

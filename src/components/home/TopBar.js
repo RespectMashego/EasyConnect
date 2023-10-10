@@ -9,15 +9,16 @@ const TopBar = () => {
     <View
       style={{
         backgroundColor: colors.primary.grey,
-        padding: 10,
+        padding: 0,
+        paddingHorizontal:20,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
       }}>
       <Image
         style={{
-          height: Dimensions.get('window').height * 0.1,
-          width: Dimensions.get('window').width * 0.1,
+          height: Dimensions.get('window').height * 0.09,
+          width: Dimensions.get('window').width * 0.09,
           marginLeft:5
         }}
         source={require('../../assets/images/logo.png')}
@@ -27,6 +28,7 @@ const TopBar = () => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
+          
         }}>
         <TouchableOpacity>
           <AntDesign name="search1" color={colors.primary.black} size={35} />

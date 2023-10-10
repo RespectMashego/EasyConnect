@@ -23,7 +23,7 @@ const BottomTabNavigator = () => {
         tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: colors.primary.grey,
-          height: 85,
+          height: 70,
         },
       }}>
       <Tab.Screen
@@ -33,7 +33,7 @@ const BottomTabNavigator = () => {
           tabBarIcon: ({focused}) =>
             focused ? (
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <Ionicons name="chatbubble" size={40} color={'#040824'} />
+                <Ionicons name="chatbubble" size={35} color={'#040824'} />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
                   Chat
                 </Text>
@@ -42,7 +42,7 @@ const BottomTabNavigator = () => {
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
                 <Ionicons
                   name="chatbubble-outline"
-                  size={40}
+                  size={35}
                   color={'#040824'}
                 />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
@@ -59,14 +59,14 @@ const BottomTabNavigator = () => {
           tabBarIcon: ({focused}) =>
             focused ? (
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <AntDesgin name="play" size={38} color={'#040824'} />
+                <AntDesgin name="play" size={33} color={'#040824'} />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
                   Story
                 </Text>
               </View>
             ) : (
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <AntDesgin name="playcircleo" size={38} color={'#040824'} />
+                <AntDesgin name="playcircleo" size={33} color={'#040824'} />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
                   Story
                 </Text>
@@ -82,7 +82,7 @@ const BottomTabNavigator = () => {
           tabBarIcon: ({focused}) =>
             focused ? (
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <Ionicons name="navigate-circle" size={45} color={'#040824'} />
+                <Ionicons name="navigate-circle" size={40} color={'#040824'} />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
                   Discover
                 </Text>
@@ -91,7 +91,7 @@ const BottomTabNavigator = () => {
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
                 <Ionicons
                   name="navigate-circle-outline"
-                  size={45}
+                  size={40}
                   color={'#040824'}
                 />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
@@ -108,14 +108,14 @@ const BottomTabNavigator = () => {
           tabBarIcon: ({focused}) =>
             focused ? (
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <FontAwesome name="user" size={38} color={'#040824'} />
+                <FontAwesome name="user" size={33} color={'#040824'} />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
                   Profile
                 </Text>
               </View>
             ) : (
               <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                <FontAwesome name="user-o" size={40} color={'#040824'} />
+                <FontAwesome name="user-o" size={33} color={'#040824'} />
                 <Text style={{color: '#040824', textAlign: 'center'}}>
                   Profile
                 </Text>
